@@ -2,6 +2,16 @@
 
 Static website for the ACM CAIS 2026 workshop **AI Discovery in the Wild**.
 
+## Preview
+
+| Home | CFP |
+| --- | --- |
+| ![Homepage preview](preview/home-full.png) | ![CFP page preview](preview/cfp-full.png) |
+
+| Organizers | Mobile |
+| --- | --- |
+| ![Organizers preview](preview/organizers.png) | ![Mobile homepage preview](preview/mobile-home.png) |
+
 ## Run locally
 
 ```bash
@@ -23,4 +33,5 @@ Then open `http://127.0.0.1:8090`.
 
 - The site is fully static and GitHub Pages friendly.
 - No build step or package install is required.
+- Desktop and phone layouts were checked locally with browser screenshots.
 - External links point to speaker homepages, sponsor sites, and the official ACM Overleaf template.
