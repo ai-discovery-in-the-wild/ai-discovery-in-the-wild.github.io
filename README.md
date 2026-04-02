@@ -34,4 +34,4 @@ Then open `http://127.0.0.1:8090`.
 - The site is fully static and GitHub Pages friendly.
 - No build step or package install is required.
 - Desktop and phone layouts were checked locally with browser screenshots.
-- External links point to speaker homepages, sponsor sites, and the official NeurIPS 2026 template.
+- External links point to speaker homepages, sponsor sites, and the official paper template.
