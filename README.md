@@ -1,6 +1,6 @@
-# AI Discovery in the Wild
+# AI Agents for Discovery in the Wild
 
-Static website for the ACM CAIS 2026 workshop **AI Discovery in the Wild**.
+Static website for the ACM CAIS 2026 workshop **AI Agents for Discovery in the Wild**.
 
 ## Preview
 
