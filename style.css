@@ -436,13 +436,6 @@ h2 {
   line-height: 1.35;
 }
 
-.cfp-content {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr);
-  gap: 28px 52px;
-  padding-top: 4px;
-}
-
 .detail-list a,
 .footer-link,
 .redirect-shell a,
@@ -470,6 +463,10 @@ h2 {
 .cfp-pane {
   display: grid;
   gap: 12px;
+}
+
+.cfp-pane-main {
+  max-width: 880px;
 }
 
 .detail-list,
@@ -501,6 +498,44 @@ h2 {
   height: 5px;
   border-radius: 50%;
   background: var(--accent);
+}
+
+.policy-section {
+  display: grid;
+  gap: 14px;
+  padding-top: 4px;
+}
+
+.policy-section h3,
+.policy-item h4 {
+  font-size: 22px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 28px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+
+.policy-item {
+  padding-top: 16px;
+}
+
+.policy-item h4 {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.policy-item p {
+  margin-top: 8px;
+  color: var(--ink-3);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .committee-block {
@@ -770,7 +805,7 @@ footer {
   .committee-list,
   .overview-points,
   .cfp-dates-grid,
-  .cfp-content,
+  .policy-grid,
   .dates-grid {
     grid-template-columns: 1fr;
   }
