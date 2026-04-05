@@ -166,7 +166,11 @@ img {
   font-family: var(--serif);
   font-style: italic;
   font-weight: 500;
-  color: var(--accent);
+  background: linear-gradient(90deg, #0b4a35 0%, #3d6a43 42%, #6a5220 72%, #6b0102 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-tagline {
