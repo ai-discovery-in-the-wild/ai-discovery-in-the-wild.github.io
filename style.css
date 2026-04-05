@@ -155,16 +155,17 @@ img {
 }
 
 #hero h1 {
-  max-width: 860px;
+  max-width: 900px;
   font-size: clamp(50px, 7vw, 92px);
-  line-height: 0.96;
+  line-height: 0.98;
   letter-spacing: -0.06em;
   font-weight: 800;
+  overflow: visible;
 }
 
 #hero h1 em {
   display: inline-block;
-  padding-right: 0.08em;
+  padding-right: 0.12em;
   font-family: var(--serif);
   font-style: italic;
   font-weight: 500;
@@ -175,6 +176,12 @@ img {
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+}
+
+#hero h1 em::after {
+  content: "";
+  display: inline-block;
+  width: 0.16em;
 }
 
 .hero-tagline {
