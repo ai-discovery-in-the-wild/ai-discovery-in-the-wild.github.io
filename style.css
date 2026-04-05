@@ -235,14 +235,15 @@ img {
 }
 
 .dates-wrap {
-  padding: 18px 0 0;
+  padding: 16px 0 0;
 }
 
 .dates-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  margin-top: 14px;
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
 }
 
 .dates-heading {
@@ -254,11 +255,11 @@ img {
 }
 
 .date-item {
-  padding: 22px 22px 22px 0;
-  border-right: 1px solid var(--border);
+  padding: 20px 24px;
+  border-left: 1px solid var(--border);
 }
 
-.date-item:last-child { border-right: 0; }
+.date-item:first-child { border-left: 0; }
 
 .date-label {
   display: block;
@@ -374,21 +375,33 @@ h2 {
 
 .cfp-shell {
   display: grid;
-  gap: 24px;
+  gap: 28px;
 }
 
 .cfp-dates {
   display: grid;
   gap: 14px;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
-.cfp-dates-title {
-  color: var(--ink-4);
-  font-size: 12px;
+.cfp-dates-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.cfp-dates-head h3,
+.support-card h3 {
+  font-size: 22px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
   font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+}
+
+.cfp-dates-head p {
+  color: var(--ink-4);
+  font-size: 14px;
 }
 
 .cfp-dates-grid {
@@ -400,13 +413,11 @@ h2 {
 }
 
 .cfp-date-item {
-  padding: 18px 18px 18px 0;
-  border-right: 1px solid var(--border);
+  padding: 18px 22px;
+  border-left: 1px solid var(--border);
 }
 
-.cfp-date-item:last-child {
-  border-right: 0;
-}
+.cfp-date-item:first-child { border-left: 0; }
 
 .cfp-date-label {
   display: block;
@@ -420,70 +431,35 @@ h2 {
 
 .cfp-date-item strong {
   color: var(--ink);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   line-height: 1.35;
 }
 
-.cfp-summary {
+.cfp-content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px 32px;
-  padding: 16px 0 0;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.9fr);
+  gap: 28px 52px;
+  padding-top: 4px;
 }
 
-.cfp-summary-item {
-  padding: 0;
-}
-
-.cfp-summary-label {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--ink-4);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.cfp-summary-item strong {
-  color: var(--ink-2);
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.45;
-}
-
-.cfp-summary-item a,
+.detail-list a,
 .footer-link,
 .redirect-shell a,
-.support-note a,
 .speaker-card-body a {
   color: var(--accent-deep);
   font-weight: 800;
   text-decoration: none;
 }
 
-.cfp-summary-item a:hover,
+.detail-list a:hover,
 .footer-link:hover,
 .redirect-shell a:hover,
-.support-note a:hover,
 .speaker-card-body a:hover {
   text-decoration: underline;
 }
 
-.cfp-text-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px 48px;
-  padding-top: 8px;
-}
-
-.cfp-text-block {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.cfp-text-block h3,
+.cfp-pane h3,
 .committee-block h3 {
   font-size: 22px;
   line-height: 1.16;
@@ -491,20 +467,31 @@ h2 {
   font-weight: 800;
 }
 
-.clean-list {
-  list-style: none;
-  margin-top: 12px;
+.cfp-pane {
+  display: grid;
+  gap: 12px;
 }
 
+.detail-list,
+.clean-list {
+  list-style: none;
+}
+
+.detail-list li,
 .clean-list li {
   position: relative;
   padding-left: 16px;
-  margin-top: 8px;
+  margin-top: 10px;
   color: var(--ink-2);
   font-size: 16px;
   line-height: 1.6;
 }
 
+.detail-list li strong {
+  color: var(--ink);
+}
+
+.detail-list li::before,
 .clean-list li::before {
   content: "";
   position: absolute;
@@ -519,7 +506,7 @@ h2 {
 .committee-block {
   display: grid;
   gap: 0;
-  padding-top: 14px;
+  padding-top: 10px;
   border-top: 1px solid var(--border);
 }
 
@@ -646,20 +633,12 @@ h2 {
 
 .support-card {
   display: grid;
-  gap: 8px;
-}
-
-.support-label {
-  color: var(--ink-4);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  gap: 10px;
 }
 
 .support-card p {
   color: var(--ink-2);
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -756,7 +735,6 @@ footer {
   .committee-list,
   .overview-points,
   .cfp-dates-grid,
-  .cfp-summary,
   .dates-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -792,8 +770,7 @@ footer {
   .committee-list,
   .overview-points,
   .cfp-dates-grid,
-  .cfp-summary,
-  .cfp-text-grid,
+  .cfp-content,
   .dates-grid {
     grid-template-columns: 1fr;
   }
@@ -802,18 +779,23 @@ footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .dates-wrap { padding-top: 16px; }
+  .dates-wrap { padding-top: 14px; }
 
   .date-item {
     padding: 18px 0;
     border-top: 1px solid var(--border);
-    border-right: 0;
+    border-left: 0;
+  }
+
+  .cfp-dates-head {
+    display: grid;
+    gap: 4px;
   }
 
   .cfp-date-item {
     padding: 16px 0;
     border-top: 1px solid var(--border);
-    border-right: 0;
+    border-left: 0;
   }
 
   .cfp-date-item:first-child {
