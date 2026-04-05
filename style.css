@@ -100,17 +100,16 @@ img {
 }
 
 .nav-mark {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--ink);
 }
 
 .nav-name {
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.02em;
   color: var(--ink-3);
 }
 
@@ -183,17 +182,25 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 22px;
-  margin-bottom: 24px;
-  border: 1px solid var(--border);
+  min-height: 46px;
+  padding: 0 24px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(186, 103, 68, 0.18);
   border-radius: 999px;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.82);
   font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-deep);
+}
+
+.hero-context {
+  margin-bottom: 18px;
+  color: var(--ink-3);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 #hero h1 {
@@ -1095,6 +1102,15 @@ footer {
 
 .subpage-copy {
   max-width: 860px;
+}
+
+.subpage-kicker {
+  margin-bottom: 14px;
+  color: var(--accent-deep);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .subpage-hero h1 {
