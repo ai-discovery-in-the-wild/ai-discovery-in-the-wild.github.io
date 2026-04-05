@@ -316,7 +316,7 @@ h2 {
 
 .overview-points,
 .policy-grid,
-.cfp-grid {
+.cfp-panels {
   display: grid;
   gap: 28px;
 }
@@ -332,10 +332,8 @@ h2 {
 
 .inline-point h3,
 .topic-list h3,
-.cfp-column h3,
 .policy-grid h3,
-.committee-block h3,
-.person-card h3 {
+.committee-block h3 {
   font-size: 22px;
   line-height: 1.16;
   letter-spacing: -0.03em;
@@ -380,25 +378,38 @@ h2 {
   font-size: 16px;
 }
 
-.cfp-grid {
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  align-items: start;
-  border-top: 1px solid var(--border);
+.cfp-shell {
+  display: grid;
+  gap: 24px;
 }
 
-.cfp-column {
-  padding-top: 20px;
+.cfp-panels {
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+}
+
+.cfp-panel {
+  padding: 24px 26px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.cfp-panel h3 {
+  font-size: 22px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  font-weight: 800;
 }
 
 .rule-list {
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .rule-row {
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
   gap: 18px;
-  padding: 14px 0;
+  padding: 12px 0;
   border-top: 1px solid var(--border);
 }
 
@@ -420,7 +431,6 @@ h2 {
 }
 
 .rule-detail a,
-.person-card a,
 .footer-link,
 .redirect-shell a {
   color: var(--accent-deep);
@@ -429,7 +439,6 @@ h2 {
 }
 
 .rule-detail a:hover,
-.person-card a:hover,
 .footer-link:hover,
 .redirect-shell a:hover {
   text-decoration: underline;
@@ -437,13 +446,11 @@ h2 {
 
 .policy-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
 }
 
 .clean-list {
   list-style: none;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .clean-list li {
@@ -465,10 +472,7 @@ h2 {
   background: var(--accent);
 }
 
-.committee-block {
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
-}
+.committee-block { display: grid; gap: 0; }
 
 .committee-list {
   display: grid;
@@ -524,44 +528,76 @@ h2 {
   color: var(--ink-3);
 }
 
-.people-grid {
-  display: grid;
-  gap: 18px;
-}
-
 .speaker-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 22px;
 }
 
 .organizer-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 26px 18px;
 }
 
-.person-card {
-  padding-top: 8px;
+.speaker-card {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 18px 0;
   border-top: 1px solid var(--border);
 }
 
-.person-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.speaker-card img {
+  width: 88px;
+  height: 88px;
   object-fit: cover;
   object-position: center 20%;
-  border-radius: 18px;
-  margin-bottom: 14px;
+  border-radius: 22px;
   background: #efe9e0;
 }
 
-.person-card p {
+.speaker-card-body h3,
+.organizer-card h3 {
+  font-size: 20px;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.speaker-card-body p,
+.organizer-card p {
   margin-top: 4px;
   color: var(--ink-3);
   font-size: 15px;
 }
 
-.person-card a {
+.speaker-card-body a {
   display: inline-block;
   margin-top: 10px;
+  color: var(--accent-deep);
   font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.speaker-card-body a:hover {
+  text-decoration: underline;
+}
+
+.organizer-card {
+  text-align: center;
+}
+
+.organizer-card img {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 12px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  background: #efe9e0;
 }
 
 .plain-note {
@@ -661,14 +697,16 @@ footer {
   }
 
   .topic-list,
-  .speaker-grid,
   .committee-list,
-  .organizer-grid,
   .overview-points,
   .policy-grid,
-  .cfp-grid,
+  .cfp-panels,
   .dates-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .organizer-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .dates-heading {
@@ -701,12 +739,15 @@ footer {
   .topic-list,
   .speaker-grid,
   .committee-list,
-  .organizer-grid,
   .overview-points,
   .policy-grid,
-  .cfp-grid,
+  .cfp-panels,
   .dates-grid {
     grid-template-columns: 1fr;
+  }
+
+  .organizer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .dates-heading,
@@ -753,6 +794,21 @@ footer {
 
   main section {
     padding: 74px 0;
+  }
+
+  .speaker-card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .speaker-card img,
+  .organizer-card img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .organizer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .schedule-row {
