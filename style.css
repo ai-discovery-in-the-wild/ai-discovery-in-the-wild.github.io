@@ -131,7 +131,7 @@ img {
 }
 
 #hero {
-  padding: 144px 0 52px;
+  padding: 144px 0 42px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -234,23 +234,18 @@ img {
   background: var(--surface);
 }
 
-.dates-grid {
-  display: grid;
-  grid-template-columns: 150px repeat(4, minmax(0, 1fr));
-  gap: 0;
+.dates-wrap {
+  padding: 18px 0 0;
 }
 
-.dates-heading,
-.date-item {
-  padding: 22px 0;
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 14px;
 }
 
 .dates-heading {
-  display: flex;
-  align-items: center;
-}
-
-.dates-heading p {
   color: var(--ink-4);
   font-size: 13px;
   font-weight: 800;
@@ -259,9 +254,11 @@ img {
 }
 
 .date-item {
-  border-left: 1px solid var(--border);
-  padding-left: 22px;
+  padding: 22px 22px 22px 0;
+  border-right: 1px solid var(--border);
 }
+
+.date-item:last-child { border-right: 0; }
 
 .date-label {
   display: block;
@@ -314,8 +311,7 @@ h2 {
   font-size: 18px;
 }
 
-.overview-points,
-.cfp-columns {
+.overview-points {
   display: grid;
   gap: 28px;
 }
@@ -710,11 +706,6 @@ footer {
   .organizer-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-
-  .dates-heading {
-    grid-column: 1 / -1;
-    padding-bottom: 8px;
-  }
 }
 
 @media (max-width: 820px) {
@@ -752,15 +743,12 @@ footer {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .dates-heading,
-  .date-item {
-    padding: 18px 0;
-  }
+  .dates-wrap { padding-top: 16px; }
 
   .date-item {
-    border-left: 0;
+    padding: 18px 0;
     border-top: 1px solid var(--border);
-    padding-left: 0;
+    border-right: 0;
   }
 
   .rule-row {
