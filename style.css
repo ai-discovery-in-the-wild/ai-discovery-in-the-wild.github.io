@@ -26,6 +26,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 88px;
+  overflow-x: clip;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
 }
 
 a {
@@ -48,7 +50,8 @@ img {
 }
 
 .container {
-  width: min(var(--container), calc(100% - (var(--gutter) * 2)));
+  width: calc(100% - (var(--gutter) * 2));
+  max-width: var(--container);
   margin: 0 auto;
 }
 
