@@ -156,12 +156,6 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
-.hero-visual,
-.hero-overlay,
-.hero-grid {
-  display: none;
-}
-
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -174,9 +168,6 @@ img {
 }
 
 .hero-lockup {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
   margin-bottom: 22px;
 }
 
@@ -193,6 +184,8 @@ img {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
 .conference-logo-hero {
   height: 52px;
   max-width: min(360px, 100%);
@@ -1100,9 +1093,6 @@ footer {
 }
 
 .subpage-lockup {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
   margin-bottom: 18px;
 }
 
@@ -1239,8 +1229,8 @@ footer {
 
 @media (max-width: 1080px) {
   #hero {
-    min-height: 780px;
-    padding: 150px 0 94px;
+    min-height: auto;
+    padding: 140px 0 88px;
   }
 
   .about-body,
@@ -1276,12 +1266,6 @@ footer {
   #hero {
     min-height: auto;
     padding: 136px 0 86px;
-  }
-
-  .hero-visual {
-    background-size: clamp(760px, 120vw, 1120px);
-    background-position: center 32%;
-    opacity: 0.56;
   }
 
   .hero-tagline {
