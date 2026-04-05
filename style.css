@@ -381,50 +381,22 @@ h2 {
   gap: 24px;
 }
 
-.cfp-columns {
+.cfp-summary {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-}
-
-.cfp-column-stack {
-  display: grid;
-  gap: 24px;
-  align-content: start;
-}
-
-.cfp-panel {
-  padding: 24px 26px;
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.cfp-panel h3 {
-  font-size: 22px;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
-  font-weight: 800;
-}
-
-.rule-list {
-  margin-top: 14px;
-}
-
-.rule-row {
-  display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  gap: 18px;
-  padding: 12px 0;
+  padding: 24px 0 0;
   border-top: 1px solid var(--border);
 }
 
-.rule-row:first-child {
-  border-top: 0;
+.cfp-summary-item {
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--border);
 }
 
-.rule-term {
+.cfp-summary-label {
+  display: block;
+  margin-bottom: 8px;
   color: var(--ink-4);
   font-size: 12px;
   font-weight: 800;
@@ -432,23 +404,48 @@ h2 {
   text-transform: uppercase;
 }
 
-.rule-detail {
+.cfp-summary-item strong {
   color: var(--ink-2);
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
-.rule-detail a,
+.cfp-summary-item a,
 .footer-link,
-.redirect-shell a {
+.redirect-shell a,
+.support-note a,
+.speaker-card-body a {
   color: var(--accent-deep);
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
 }
 
-.rule-detail a:hover,
+.cfp-summary-item a:hover,
 .footer-link:hover,
-.redirect-shell a:hover {
+.redirect-shell a:hover,
+.support-note a:hover,
+.speaker-card-body a:hover {
   text-decoration: underline;
+}
+
+.cfp-text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.cfp-text-block {
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.cfp-text-block h3,
+.committee-block h3 {
+  font-size: 22px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  font-weight: 800;
 }
 
 .clean-list {
@@ -475,7 +472,12 @@ h2 {
   background: var(--accent);
 }
 
-.committee-block { display: grid; gap: 0; }
+.committee-block {
+  display: grid;
+  gap: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
 
 .committee-list {
   display: grid;
@@ -576,19 +578,6 @@ h2 {
   font-size: 15px;
 }
 
-.speaker-card-body a {
-  display: inline-block;
-  margin-top: 10px;
-  color: var(--accent-deep);
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.speaker-card-body a:hover {
-  text-decoration: underline;
-}
-
 .organizer-card {
   text-align: center;
 }
@@ -619,16 +608,6 @@ h2 {
   max-width: 760px;
   color: var(--ink-3);
   font-size: 16px;
-}
-
-.support-note a {
-  color: var(--accent-deep);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.support-note a:hover {
-  text-decoration: underline;
 }
 
 footer {
@@ -723,7 +702,7 @@ footer {
   .topic-list,
   .committee-list,
   .overview-points,
-  .cfp-columns,
+  .cfp-summary,
   .dates-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -763,7 +742,8 @@ footer {
   .speaker-grid,
   .committee-list,
   .overview-points,
-  .cfp-columns,
+  .cfp-summary,
+  .cfp-text-grid,
   .dates-grid {
     grid-template-columns: 1fr;
   }
