@@ -6,20 +6,20 @@
 }
 
 :root {
-  --bg: #f7f4ee;
-  --bg-alt: #f2eee7;
-  --surface: #ffffff;
+  --bg: #fbfaf7;
+  --bg-alt: #f7f4ee;
+  --surface: #fffdf9;
   --ink: #171410;
   --ink-2: #4e453c;
   --ink-3: #796d60;
   --ink-4: #9b8f82;
   --accent: #b46745;
   --accent-deep: #8b4f35;
-  --border: rgba(84, 69, 56, 0.14);
-  --border-strong: rgba(84, 69, 56, 0.24);
-  --border-soft: rgba(84, 69, 56, 0.09);
-  --panel: rgba(255, 255, 255, 0.62);
-  --panel-strong: rgba(255, 255, 255, 0.78);
+  --border: rgba(84, 69, 56, 0.11);
+  --border-strong: rgba(84, 69, 56, 0.18);
+  --border-soft: rgba(84, 69, 56, 0.06);
+  --panel: rgba(255, 255, 255, 0.78);
+  --panel-strong: rgba(255, 255, 255, 0.9);
   --sans: "Manrope", "Segoe UI", sans-serif;
   --serif: "Fraunces", Georgia, serif;
   --container: 1160px;
@@ -63,7 +63,7 @@ img {
   inset: 0 0 auto;
   z-index: 100;
   height: 76px;
-  background: rgba(247, 244, 238, 0.92);
+  background: rgba(251, 250, 247, 0.92);
   border-bottom: 1px solid transparent;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -640,7 +640,7 @@ h2 {
   object-fit: cover;
   object-position: center 20%;
   border-radius: 22px;
-  background: #efe9e0;
+  background: #f4efe8;
 }
 
 .speaker-card-body h3,
@@ -669,7 +669,7 @@ h2 {
   object-fit: cover;
   object-position: center 20%;
   border-radius: 50%;
-  background: #efe9e0;
+  background: #f4efe8;
 }
 
 .support-grid {
@@ -772,7 +772,7 @@ footer {
     align-items: flex-start;
     gap: 14px;
     padding: 18px;
-    background: rgba(247, 244, 238, 0.98);
+    background: rgba(251, 250, 247, 0.98);
     border: 1px solid var(--border);
   }
 
