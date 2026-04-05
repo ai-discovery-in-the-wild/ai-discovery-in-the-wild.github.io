@@ -288,10 +288,6 @@ main section {
   padding: 88px 0;
 }
 
-main section:nth-of-type(even) {
-  background: var(--bg-alt);
-}
-
 .section-block {
   display: grid;
   gap: 30px;
@@ -325,7 +321,7 @@ h2 {
 
 .overview-points {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-soft);
 }
 
 .inline-point {
@@ -353,13 +349,13 @@ h2 {
   gap: 0 40px;
   counter-reset: topics;
   list-style: none;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-soft);
 }
 
 .topic-list li {
   position: relative;
   padding: 22px 0 22px 44px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .topic-list li::before {
@@ -585,7 +581,7 @@ h2 {
 }
 
 .schedule-table {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border-soft);
 }
 
 .schedule-row {
@@ -593,7 +589,7 @@ h2 {
   grid-template-columns: 84px minmax(0, 1fr);
   gap: 24px;
   padding: 16px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .schedule-time {
