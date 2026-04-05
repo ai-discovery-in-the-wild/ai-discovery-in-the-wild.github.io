@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Agents for Discovery in the Wild | ACM CAIS 2026 Workshop</title>
-  <meta name="description" content="AI Agents for Discovery in the Wild is an ACM CAIS 2026 workshop on AI agents for discovery beyond benchmark settings. May 26, 2026 in San Jose, California.">
-  <meta name="theme-color" content="#111111">
+  <meta name="description" content="AI Agents for Discovery in the Wild is an ACM CAIS 2026 workshop on methods, evaluation, systems, and deployment for AI agents used in real-world discovery.">
+  <meta name="theme-color" content="#f7f4ee">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <nav id="navbar">
   <div class="container nav-inner">
-    <a href="#hero" class="nav-logo">
+    <a href="#hero" class="nav-logo" aria-label="AI Agents for Discovery in the Wild home">
       <img src="assets/logos/acm-cais-logo.svg" alt="ACM Conference on AI and Agentic Systems" class="conference-logo conference-logo-nav">
     </a>
 
@@ -26,10 +26,11 @@
     </button>
 
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="cfp.html">Call for Papers</a></li>
-      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#speakers">Speakers</a></li>
       <li><a href="#organizers">Organizers</a></li>
     </ul>
   </div>
@@ -37,501 +38,420 @@
 
 <header id="hero">
   <div class="container hero-inner">
-    <div class="hero-copy">
-      <p class="hero-kicker">Official ACM CAIS 2026 Workshop</p>
-      <h1>
-        <span>AI Agents for Discovery</span>
-        <em>in the Wild</em>
-      </h1>
-      <p class="hero-tagline">Workshop on methods, systems, evaluation, and deployment of AI agents for real-world discovery.</p>
-      <div class="hero-actions">
-        <a href="cfp.html" class="hero-btn hero-btn-primary">Call for Papers</a>
-        <a href="#speakers" class="hero-btn hero-btn-secondary">Invited Speakers</a>
-      </div>
-      <div class="hero-meta">
-        <div class="hm">
-          <span class="hm-label">When</span>
-          <span class="hm-value">May 26, 2026</span>
-        </div>
-        <div class="hm-sep"></div>
-        <div class="hm">
-          <span class="hm-label">Where</span>
-          <span class="hm-value">San Jose, CA</span>
-        </div>
-        <div class="hm-sep"></div>
-        <div class="hm">
-          <span class="hm-label">Format</span>
-          <span class="hm-value">Full-day, in person</span>
-        </div>
-      </div>
+    <p class="hero-kicker">Official ACM CAIS 2026 Workshop</p>
+    <h1>AI Agents for Discovery <em>in the Wild</em></h1>
+    <p class="hero-tagline">Methods, evaluation, systems, and deployment for AI agents used in real-world discovery settings.</p>
+    <div class="hero-meta" aria-label="Workshop details">
+      <span>May 26, 2026</span>
+      <span class="meta-sep">·</span>
+      <span>San Jose, CA</span>
+      <span class="meta-sep">·</span>
+      <span>Full-day workshop</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#cfp" class="button button-primary">Call for Papers</a>
+      <a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip" class="button button-secondary" target="_blank" rel="noreferrer">Paper Template</a>
     </div>
   </div>
 </header>
 
-<div id="dates-strip">
-  <div class="container dates-wrap">
-    <div class="dates-label">Key Dates</div>
-    <div class="dates-grid">
-      <div class="dg">
-        <span class="dg-l">Submission Deadline</span>
-        <span class="dg-v">May 1, 2026</span>
-      </div>
-      <div class="dg">
-        <span class="dg-l">Reviews</span>
-        <span class="dg-v">May 8, 2026</span>
-      </div>
-      <div class="dg">
-        <span class="dg-l">Camera-Ready</span>
-        <span class="dg-v">May 22, 2026</span>
-      </div>
-      <div class="dg">
-        <span class="dg-l">Workshop Day</span>
-        <span class="dg-v">May 26, 2026</span>
-      </div>
+<section id="dates-strip" aria-labelledby="dates-title">
+  <div class="container dates-grid">
+    <div class="dates-heading">
+      <p id="dates-title">Key Dates</p>
     </div>
-  </div>
-</div>
-
-<section id="about">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-number">01</span>
-      <div class="section-heading">
-        <h2>About</h2>
-      </div>
+    <div class="date-item">
+      <span class="date-label">Submission Deadline</span>
+      <span class="date-value">May 8, 2026</span>
     </div>
-
-    <div class="about-body">
-      <div class="about-copy">
-        <p class="lead-text">The workshop focuses on AI agents for discovery that generate, evaluate, and refine candidate solutions. Examples include <strong>AlphaEvolve</strong>, <strong>GEPA</strong>, <strong>SkyDiscover</strong>, <strong>OpenEvolve</strong>, <strong>Glia</strong>, <strong>Claude Code</strong>, and <strong>Cursor</strong>.</p>
-        <p>The central workshop setting is the transition from benchmark tasks to real-world settings with expensive evaluations, noisy measurements, underspecified objectives, and deployment constraints.</p>
-        <p>The program focuses on evaluation, validation, human oversight, systems infrastructure, and case studies from real deployments.</p>
-
-        <div class="about-callout">
-          <span class="callout-label">Scope</span>
-          <p>Submissions and discussion should address AI agents for discovery beyond benchmark-only settings.</p>
-        </div>
-
-        <div class="about-questions">
-          <span class="callout-label">Key Questions</span>
-          <ul class="question-list">
-            <li>How should discovery systems be evaluated when reliable ground truth is unavailable?</li>
-            <li>Where should experts stay in the loop during search, validation, and deployment?</li>
-            <li>What infrastructure is needed to run iterative discovery workflows reliably at scale?</li>
-          </ul>
-        </div>
-      </div>
-
-      <aside class="themes-panel">
-        <div class="panel-head">
-          <h3 class="panel-title">Themes</h3>
-          <p class="panel-note">Six discussion areas.</p>
-        </div>
-
-        <div class="theme-item">
-          <span class="theme-num">I</span>
-          <div>
-            <strong>Problem Formulation and Evaluation</strong>
-            <p>Expensive simulations, noisy measurements, and multi-objective tradeoffs.</p>
-          </div>
-        </div>
-        <div class="theme-item">
-          <span class="theme-num">II</span>
-          <div>
-            <strong>Scaling, Cost, and Efficiency</strong>
-            <p>Exploration depth, model spend, and solution quality under real constraints.</p>
-          </div>
-        </div>
-        <div class="theme-item">
-          <span class="theme-num">III</span>
-          <div>
-            <strong>Trust and Validation</strong>
-            <p>How to validate AI-discovered outputs when clear ground truth is unavailable.</p>
-          </div>
-        </div>
-        <div class="theme-item">
-          <span class="theme-num">IV</span>
-          <div>
-            <strong>Human-AI Collaboration</strong>
-            <p>Interfaces between domain experts, search systems, and evaluation pipelines.</p>
-          </div>
-        </div>
-        <div class="theme-item">
-          <span class="theme-num">V</span>
-          <div>
-            <strong>Systems Infrastructure</strong>
-            <p>Reproducible, observable, and reliable execution of discovery workflows at scale.</p>
-          </div>
-        </div>
-        <div class="theme-item">
-          <span class="theme-num">VI</span>
-          <div>
-            <strong>Case Studies</strong>
-            <p>Successes, failures, and lessons from real deployment environments.</p>
-          </div>
-        </div>
-      </aside>
+    <div class="date-item">
+      <span class="date-label">Notification</span>
+      <span class="date-value">May 13, 2026</span>
+    </div>
+    <div class="date-item">
+      <span class="date-label">Camera-Ready</span>
+      <span class="date-value">May 24, 2026</span>
+    </div>
+    <div class="date-item">
+      <span class="date-label">Workshop Day</span>
+      <span class="date-value">May 26, 2026</span>
     </div>
   </div>
 </section>
 
-<section id="cfp">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-number">02</span>
-      <div class="section-heading">
+<main>
+  <section id="overview">
+    <div class="container section-block">
+      <div class="section-copy">
+        <h2>Overview</h2>
+        <p>AI systems can now search over code, experiments, and workflows to produce candidate discoveries. This workshop focuses on agents that move beyond benchmark settings and operate under expensive evaluations, noisy measurements, underspecified objectives, and deployment constraints.</p>
+        <p>We invite work on methods, evaluation, systems, and deployment for discovery agents in science, engineering, and other real-world settings where reliable validation and human oversight matter.</p>
+      </div>
+
+      <div class="overview-points">
+        <article class="inline-point">
+          <h3>Evaluation</h3>
+          <p>How should discovery systems be assessed when reliable ground truth is limited or unavailable?</p>
+        </article>
+        <article class="inline-point">
+          <h3>Human Oversight</h3>
+          <p>Where should domain experts remain in the loop during search, validation, and deployment?</p>
+        </article>
+        <article class="inline-point">
+          <h3>Systems</h3>
+          <p>What infrastructure is needed to run iterative discovery workflows reliably at scale?</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="container section-block">
+      <div class="section-copy section-copy-wide">
+        <h2>Topics of Interest</h2>
+        <p>We welcome submissions across the lifecycle of AI agents for discovery. The list below is intended to clarify scope rather than restrict it.</p>
+      </div>
+
+      <ol class="topic-list">
+        <li>
+          <h3>Agentic and Evolutionary Systems</h3>
+          <p>Design, architecture, and evaluation of agents and evolutionary methods for discovery and optimization.</p>
+        </li>
+        <li>
+          <h3>LLM-Driven Search and Optimization</h3>
+          <p>Search over code, algorithms, configurations, and designs, including self-refinement and hybrid approaches.</p>
+        </li>
+        <li>
+          <h3>Discovery Problems and Evaluation</h3>
+          <p>Problem formulation for real settings with expensive simulations, noisy measurements, and multi-objective tradeoffs.</p>
+        </li>
+        <li>
+          <h3>Real-World Deployment</h3>
+          <p>Experience reports and case studies from production or applied settings, including both successes and failures.</p>
+        </li>
+        <li>
+          <h3>Infrastructure for Discovery Systems</h3>
+          <p>Reliability, reproducibility, cost management, and integration with existing workflows.</p>
+        </li>
+        <li>
+          <h3>Multi-Agent Systems</h3>
+          <p>Architectures and coordination strategies for collaborative agent systems working on discovery tasks.</p>
+        </li>
+        <li>
+          <h3>Reinforcement Learning</h3>
+          <p>RL for guiding search, reward design, policy learning, and exploration-exploitation tradeoffs.</p>
+        </li>
+        <li>
+          <h3>Human-AI Collaboration</h3>
+          <p>Interfaces between domain experts and autonomous discovery systems, including human-in-the-loop workflows.</p>
+        </li>
+        <li>
+          <h3>Safety and Verifiability</h3>
+          <p>Validation, safety, and trust for AI-generated solutions in domains without clean ground truth.</p>
+        </li>
+        <li>
+          <h3>Scaling, Cost, and Efficiency</h3>
+          <p>Tradeoffs between exploration depth, model cost, and solution quality across different frameworks.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="cfp">
+    <div class="container section-block">
+      <div class="section-copy section-copy-wide">
         <h2>Call for Papers</h2>
+        <p>The workshop invites submissions from researchers and practitioners working on autonomous AI systems for discovery and optimization, with particular emphasis on the challenges that arise when moving these systems from benchmarks to real-world deployment.</p>
+        <p>We actively encourage experience reports and case studies from practitioners who have deployed AI discovery systems on real problems, including both successes and failures.</p>
+      </div>
+
+      <div class="cfp-grid">
+        <div class="cfp-column">
+          <h3>Submission formats</h3>
+          <div class="rule-list">
+            <div class="rule-row">
+              <span class="rule-term">Short papers</span>
+              <span class="rule-detail">4 content pages, excluding references and appendices</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-term">Long papers</span>
+              <span class="rule-detail">9 content pages, excluding references and appendices</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cfp-column">
+          <h3>Submission details</h3>
+          <div class="rule-list">
+            <div class="rule-row">
+              <span class="rule-term">File format</span>
+              <span class="rule-detail">Single PDF submission, up to 50 MB</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-term">Template</span>
+              <span class="rule-detail"><a href="https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip" target="_blank" rel="noreferrer">Official paper template</a>, matching the NeurIPS 2026 paper format</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-term">Review</span>
+              <span class="rule-detail">Double blind, with at least two reviews per submission</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-term">Archival status</span>
+              <span class="rule-detail">Non-archival workshop; concurrent submissions and preprints are welcome</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-term">Presentation</span>
+              <span class="rule-detail">Accepted papers will be presented as posters; a small number may also be selected for contributed oral talks</span>
+            </div>
+            <div class="rule-row">
+              <span class="rule-term">Portal</span>
+              <span class="rule-detail">OpenReview submission portal coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="policy-grid">
+        <article>
+          <h3>Policies</h3>
+          <ul class="clean-list">
+            <li>Review PDFs must be anonymized, including supplementary or linked material.</li>
+            <li>References and appendices do not count toward the page limit, but the main text must be self-contained.</li>
+            <li>Submissions and reviews will not be public; only accepted papers will be made public.</li>
+            <li>One Best Paper Award will be given.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Important dates</h3>
+          <ul class="clean-list">
+            <li><strong>Submission deadline:</strong> May 8, 2026 (AoE)</li>
+            <li><strong>Acceptance notification:</strong> May 13, 2026 (AoE)</li>
+            <li><strong>Camera-ready:</strong> May 24, 2026 (AoE)</li>
+            <li><strong>Workshop day:</strong> May 26, 2026</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="committee-block">
+        <h3>Program Committee</h3>
+        <div class="committee-list">
+          <div class="committee-person"><strong>Alex Dimakis</strong><span>UC Berkeley / Bespoke Labs</span></div>
+          <div class="committee-person"><strong>Batu El</strong><span>Stanford</span></div>
+          <div class="committee-person"><strong>Eric Liang</strong><span>Databricks</span></div>
+          <div class="committee-person"><strong>Shu Liu</strong><span>UC Berkeley</span></div>
+          <div class="committee-person"><strong>Rui Meng</strong><span>Google</span></div>
+          <div class="committee-person"><strong>Melissa Pan</strong><span>UC Berkeley</span></div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <p class="section-intro">We invite papers on methods, systems, evaluation, and deployment of AI agents for discovery in real-world settings.</p>
-
-    <div class="cfp-layout">
-      <div class="surface-card cfp-topics">
-        <p class="surface-label">Topics</p>
-        <p class="surface-intro">Submissions should address real-world use of AI agents for discovery.</p>
-        <div class="topics-grid">
-          <ul>
-            <li>Agentic and evolutionary systems for discovery</li>
-            <li>LLM-driven search and optimization</li>
-            <li>Discovery problems and evaluation methodologies</li>
-            <li>Real-world deployment of discovery systems</li>
-          </ul>
-          <ul>
-            <li>Infrastructure for large-scale discovery workflows</li>
-            <li>Multi-agent systems for scientific and systems discovery</li>
-            <li>Human-AI collaborative discovery interfaces</li>
-            <li>Safety, verifiability, and trust in generated solutions</li>
-          </ul>
-        </div>
+  <section id="schedule">
+    <div class="container section-block">
+      <div class="section-copy section-copy-wide">
+        <h2>Tentative Schedule</h2>
+        <p>May 26, 2026 · San Jose, CA · subject to change</p>
       </div>
 
-      <div class="surface-card cfp-quick">
-        <p class="surface-label">Submission Info</p>
-        <div class="quick-lines">
-          <div class="quick-line"><span>Formats</span><strong>4 pages or 9 pages</strong></div>
-          <div class="quick-line"><span>Template</span><strong>Official paper template</strong></div>
-          <div class="quick-line"><span>Review</span><strong>Double blind · 2+ reviews</strong></div>
-          <div class="quick-line"><span>Archival status</span><strong>Non-archival workshop</strong></div>
+      <div class="schedule-table">
+        <div class="schedule-row">
+          <span class="schedule-time">8:30</span>
+          <span class="schedule-label">Opening Remarks</span>
         </div>
-
-        <ul class="cfp-list compact-list">
-          <li>Concurrent conference submissions and previously circulated manuscripts are welcome.</li>
-          <li>All accepted papers will be presented in poster form at the workshop.</li>
-          <li>9-page papers match the official format; 4-page papers use the same template with a shorter page limit.</li>
-        </ul>
-
-        <div class="cfp-actions">
-          <a href="cfp.html" class="hero-btn hero-btn-primary">View CFP</a>
-          <span class="cfp-note">See the full submission rules, dates, and template link.</span>
+        <div class="schedule-row">
+          <span class="schedule-time">8:45</span>
+          <span class="schedule-label">Invited Talk 1</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">9:15</span>
+          <span class="schedule-label">Invited Talk 2</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">9:45</span>
+          <span class="schedule-label">Paper Session</span>
+        </div>
+        <div class="schedule-row schedule-row-muted">
+          <span class="schedule-time">10:15</span>
+          <span class="schedule-label">Coffee Break</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">10:30</span>
+          <span class="schedule-label">Invited Talk 3</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">11:00</span>
+          <span class="schedule-label">Poster Session 1</span>
+        </div>
+        <div class="schedule-row schedule-row-muted">
+          <span class="schedule-time">11:45</span>
+          <span class="schedule-label">Lunch</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">13:30</span>
+          <span class="schedule-label">Invited Talk 4</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">14:00</span>
+          <span class="schedule-label">Invited Talk 5</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">14:30</span>
+          <span class="schedule-label">Panel Discussion</span>
+        </div>
+        <div class="schedule-row schedule-row-muted">
+          <span class="schedule-time">15:15</span>
+          <span class="schedule-label">Coffee Break</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">15:30</span>
+          <span class="schedule-label">Poster Session 2</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">16:15</span>
+          <span class="schedule-label">Open Discussion</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-time">16:45</span>
+          <span class="schedule-label">Closing Remarks</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="speakers">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-number">03</span>
-      <div class="section-heading">
+  <section id="speakers">
+    <div class="container section-block">
+      <div class="section-copy section-copy-wide">
         <h2>Invited Speakers</h2>
       </div>
-    </div>
 
-    <div class="speakers-grid">
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/aditya-akella.jpg" alt="Headshot of Aditya Akella" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>Aditya Akella</h3>
-              <p class="spk-aff">UT Austin</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://www.cs.utexas.edu/~akella/" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/mohammad-alizadeh.jpg" alt="Headshot of Mohammad Alizadeh" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>Mohammad Alizadeh</h3>
-              <p class="spk-aff">MIT / Glia</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://people.csail.mit.edu/alizadeh/" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/joey-gonzalez.jpg" alt="Headshot of Joey Gonzalez" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>Joey Gonzalez</h3>
-              <p class="spk-aff">UC Berkeley</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://joeygonzalez.com/" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/azalia-mirhoseini.jpg" alt="Headshot of Azalia Mirhoseini" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>Azalia Mirhoseini</h3>
-              <p class="spk-aff">Stanford / Recursive Intelligence</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://www.cs.stanford.edu/people/azalia-mirhoseini" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/graham-neubig.jpg" alt="Headshot of Graham Neubig" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>Graham Neubig</h3>
-              <p class="spk-aff">CMU / OpenHands</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/aditya-parameswaran.jpg" alt="Headshot of Aditya Parameswaran" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>Aditya Parameswaran</h3>
-              <p class="spk-aff">UC Berkeley</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-
-      <article class="spk">
-        <div class="spk-top">
-          <div class="spk-id">
-            <div class="spk-avatar">
-              <img src="assets/speakers/james-zou.jpg" alt="Headshot of James Zou" loading="eager">
-            </div>
-            <div class="spk-head">
-              <h3>James Zou</h3>
-              <p class="spk-aff">Stanford</p>
-            </div>
-          </div>
-        </div>
-        <div class="spk-foot">
-          <a class="spk-link" href="https://datascience.stanford.edu/people/james-zou" target="_blank" rel="noreferrer">Homepage</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="schedule">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-number">04</span>
-      <div class="section-heading">
-        <h2>Tentative Schedule</h2>
+      <div class="people-grid speaker-grid">
+        <article class="person-card">
+          <img src="assets/speakers/aditya-akella.jpg" alt="Headshot of Aditya Akella" loading="eager">
+          <h3>Aditya Akella</h3>
+          <p>UT Austin</p>
+          <a href="https://www.cs.utexas.edu/~akella/" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img src="assets/speakers/mohammad-alizadeh.jpg" alt="Headshot of Mohammad Alizadeh" loading="eager">
+          <h3>Mohammad Alizadeh</h3>
+          <p>MIT / Glia</p>
+          <a href="https://people.csail.mit.edu/alizadeh/" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img src="assets/speakers/joey-gonzalez.jpg" alt="Headshot of Joey Gonzalez" loading="eager">
+          <h3>Joey Gonzalez</h3>
+          <p>UC Berkeley</p>
+          <a href="https://joeygonzalez.com/" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img src="assets/speakers/azalia-mirhoseini.jpg" alt="Headshot of Azalia Mirhoseini" loading="eager">
+          <h3>Azalia Mirhoseini</h3>
+          <p>Stanford / Recursive Intelligence</p>
+          <a href="https://www.cs.stanford.edu/people/azalia-mirhoseini" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img src="assets/speakers/graham-neubig.jpg" alt="Headshot of Graham Neubig" loading="eager">
+          <h3>Graham Neubig</h3>
+          <p>CMU / OpenHands</p>
+          <a href="https://www.lti.cs.cmu.edu/people/faculty/neubig-graham.html" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img src="assets/speakers/aditya-parameswaran.jpg" alt="Headshot of Aditya Parameswaran" loading="eager">
+          <h3>Aditya Parameswaran</h3>
+          <p>UC Berkeley</p>
+          <a href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
+        <article class="person-card">
+          <img src="assets/speakers/james-zou.jpg" alt="Headshot of James Zou" loading="eager">
+          <h3>James Zou</h3>
+          <p>Stanford</p>
+          <a href="https://datascience.stanford.edu/people/james-zou" target="_blank" rel="noreferrer">Homepage</a>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="schedule-shell">
-      <p class="sched-note">May 26, 2026 · San Jose, CA · subject to change</p>
-      <div class="sched-table">
-        <div class="sched-row">
-          <span class="st-time">8:30</span>
-          <span class="st-kind">Opening</span>
-          <span class="st-event">Opening Remarks</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">8:45</span>
-          <span class="st-kind">Talk</span>
-          <span class="st-event">Speaker Session 1</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">9:15</span>
-          <span class="st-kind">Talk</span>
-          <span class="st-event">Speaker Session 2</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">9:45</span>
-          <span class="st-kind">Session</span>
-          <span class="st-event">Paper Session</span>
-        </div>
-        <div class="sched-row is-break">
-          <span class="st-time">10:15</span>
-          <span class="st-kind">Break</span>
-          <span class="st-event">Coffee Break</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">10:30</span>
-          <span class="st-kind">Talk</span>
-          <span class="st-event">Speaker Session 3</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">11:00</span>
-          <span class="st-kind">Poster</span>
-          <span class="st-event">Poster Session 1</span>
-        </div>
-        <div class="sched-row is-break">
-          <span class="st-time">11:45</span>
-          <span class="st-kind">Break</span>
-          <span class="st-event">Lunch</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">13:30</span>
-          <span class="st-kind">Talk</span>
-          <span class="st-event">Speaker Session 4</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">14:00</span>
-          <span class="st-kind">Talk</span>
-          <span class="st-event">Speaker Session 5</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">14:30</span>
-          <span class="st-kind">Panel</span>
-          <span class="st-event">Panel Discussion</span>
-        </div>
-        <div class="sched-row is-break">
-          <span class="st-time">15:15</span>
-          <span class="st-kind">Break</span>
-          <span class="st-event">Coffee Break</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">15:30</span>
-          <span class="st-kind">Poster</span>
-          <span class="st-event">Poster Session 2</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">16:15</span>
-          <span class="st-kind">Session</span>
-          <span class="st-event">Open Discussion</span>
-        </div>
-        <div class="sched-row">
-          <span class="st-time">16:45</span>
-          <span class="st-kind">Close</span>
-          <span class="st-event">Closing Remarks</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="organizers">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-number">05</span>
-      <div class="section-heading">
+  <section id="organizers">
+    <div class="container section-block">
+      <div class="section-copy section-copy-wide">
         <h2>Organizers</h2>
       </div>
-    </div>
 
-    <div class="org-grid">
-      <article class="org-card">
-        <img src="assets/organizers/shubham-agarwal.jpg" alt="Headshot of Shubham Agarwal" loading="eager">
-        <strong>Shubham Agarwal</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/lakshya-agrawal.jpg" alt="Headshot of Lakshya Agrawal" loading="eager">
-        <strong>Lakshya Agrawal</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/mert-cemri.jpg" alt="Headshot of Mert Cemri" loading="eager">
-        <strong>Mert Cemri</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/alex-dimakis.jpg" alt="Headshot of Alex Dimakis" loading="eager">
-        <strong>Alex Dimakis</strong><span>UC Berkeley / Bespoke Labs</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/batu-el.jpg" alt="Headshot of Batu El" loading="eager">
-        <strong>Batu El</strong><span>Stanford</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/alex-krentsel.jpg" alt="Headshot of Alex Krentsel" loading="eager">
-        <strong>Alex Krentsel</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/eric-liang.jpg" alt="Headshot of Eric Liang" loading="eager">
-        <strong>Eric Liang</strong><span>Databricks</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/shu-liu.jpg" alt="Headshot of Shu Liu" loading="eager">
-        <strong>Shu Liu</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/rui-meng.jpg" alt="Headshot of Rui Meng" loading="eager">
-        <strong>Rui Meng</strong><span>Google</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/sylvia-ratnasamy.jpg" alt="Headshot of Sylvia Ratnasamy" loading="eager">
-        <strong>Sylvia Ratnasamy</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/ion-stoica.jpg" alt="Headshot of Ion Stoica" loading="eager">
-        <strong>Ion Stoica</strong><span>UC Berkeley</span>
-      </article>
-      <article class="org-card">
-        <img src="assets/organizers/matei-zaharia.jpg" alt="Headshot of Matei Zaharia" loading="eager">
-        <strong>Matei Zaharia</strong><span>UC Berkeley / Databricks</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="sponsors">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-number">06</span>
-      <div class="section-heading">
-        <h2>Sponsors</h2>
+      <div class="people-grid organizer-grid">
+        <article class="person-card">
+          <img src="assets/organizers/shubham-agarwal.jpg" alt="Headshot of Shubham Agarwal" loading="eager">
+          <h3>Shubham Agarwal</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/lakshya-agrawal.jpg" alt="Headshot of Lakshya Agrawal" loading="eager">
+          <h3>Lakshya Agrawal</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/mert-cemri.jpg" alt="Headshot of Mert Cemri" loading="eager">
+          <h3>Mert Cemri</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/alex-dimakis.jpg" alt="Headshot of Alex Dimakis" loading="eager">
+          <h3>Alex Dimakis</h3>
+          <p>UC Berkeley / Bespoke Labs</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/batu-el.jpg" alt="Headshot of Batu El" loading="eager">
+          <h3>Batu El</h3>
+          <p>Stanford</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/alex-krentsel.jpg" alt="Headshot of Alex Krentsel" loading="eager">
+          <h3>Alex Krentsel</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/eric-liang.jpg" alt="Headshot of Eric Liang" loading="eager">
+          <h3>Eric Liang</h3>
+          <p>Databricks</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/shu-liu.jpg" alt="Headshot of Shu Liu" loading="eager">
+          <h3>Shu Liu</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/rui-meng.jpg" alt="Headshot of Rui Meng" loading="eager">
+          <h3>Rui Meng</h3>
+          <p>Google</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/sylvia-ratnasamy.jpg" alt="Headshot of Sylvia Ratnasamy" loading="eager">
+          <h3>Sylvia Ratnasamy</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/ion-stoica.jpg" alt="Headshot of Ion Stoica" loading="eager">
+          <h3>Ion Stoica</h3>
+          <p>UC Berkeley</p>
+        </article>
+        <article class="person-card">
+          <img src="assets/organizers/matei-zaharia.jpg" alt="Headshot of Matei Zaharia" loading="eager">
+          <h3>Matei Zaharia</h3>
+          <p>UC Berkeley / Databricks</p>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="sponsor-grid">
-      <article class="sponsor-card">
-        <p class="sponsor-status">To be decided.</p>
-      </article>
+  <section id="sponsors">
+    <div class="container section-block">
+      <div class="section-copy section-copy-wide">
+        <h2>Sponsors</h2>
+      </div>
+      <p class="plain-note">To be decided.</p>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="container footer-inner">
