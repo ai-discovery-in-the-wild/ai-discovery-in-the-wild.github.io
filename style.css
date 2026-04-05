@@ -17,6 +17,9 @@
   --accent-deep: #8b4f35;
   --border: rgba(84, 69, 56, 0.14);
   --border-strong: rgba(84, 69, 56, 0.24);
+  --border-soft: rgba(84, 69, 56, 0.09);
+  --panel: rgba(255, 255, 255, 0.62);
+  --panel-strong: rgba(255, 255, 255, 0.78);
   --sans: "Manrope", "Segoe UI", sans-serif;
   --serif: "Fraunces", Georgia, serif;
   --container: 1160px;
@@ -379,6 +382,7 @@ h2 {
 .cfp-shell {
   display: grid;
   gap: 28px;
+  max-width: 1040px;
 }
 
 .cfp-dates {
@@ -411,15 +415,15 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  background: rgba(255, 255, 255, 0.56);
-  border: 1px solid var(--border);
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
   border-radius: 16px;
   overflow: hidden;
 }
 
 .cfp-date-item {
   padding: 18px 22px;
-  border-left: 1px solid var(--border);
+  border-left: 1px solid var(--border-soft);
 }
 
 .cfp-date-item:first-child { border-left: 0; }
@@ -527,7 +531,11 @@ h2 {
 }
 
 .policy-item {
-  padding-top: 0;
+  min-height: 100%;
+  padding: 16px 18px;
+  background: var(--panel);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
 }
 
 .policy-item h4 {
@@ -556,7 +564,11 @@ h2 {
 }
 
 .committee-person {
-  padding-top: 0;
+  min-height: 100%;
+  padding: 14px 16px;
+  background: var(--panel-strong);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
 }
 
 .committee-person strong {
