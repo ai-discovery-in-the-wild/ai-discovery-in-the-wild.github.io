@@ -380,19 +380,17 @@ h2 {
 .cfp-summary {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  padding: 24px 0 0;
-  border-top: 1px solid var(--border);
+  gap: 18px 32px;
+  padding: 16px 0 0;
 }
 
 .cfp-summary-item {
-  padding: 0 0 18px;
-  border-bottom: 1px solid var(--border);
+  padding: 0;
 }
 
 .cfp-summary-label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--ink-4);
   font-size: 12px;
   font-weight: 800;
@@ -402,9 +400,9 @@ h2 {
 
 .cfp-summary-item strong {
   color: var(--ink-2);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .cfp-summary-item a,
@@ -428,12 +426,13 @@ h2 {
 .cfp-text-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
+  gap: 32px 48px;
+  padding-top: 8px;
 }
 
 .cfp-text-block {
-  padding-top: 8px;
-  border-top: 1px solid var(--border);
+  padding-top: 0;
+  border-top: 0;
 }
 
 .cfp-text-block h3,
@@ -446,15 +445,16 @@ h2 {
 
 .clean-list {
   list-style: none;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .clean-list li {
   position: relative;
   padding-left: 16px;
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--ink-2);
   font-size: 16px;
+  line-height: 1.6;
 }
 
 .clean-list li::before {
@@ -471,7 +471,7 @@ h2 {
 .committee-block {
   display: grid;
   gap: 0;
-  padding-top: 8px;
+  padding-top: 14px;
   border-top: 1px solid var(--border);
 }
 
@@ -588,22 +588,31 @@ h2 {
   background: #efe9e0;
 }
 
-.plain-note {
-  padding-top: 22px;
-  border-top: 1px solid var(--border);
-  color: var(--ink-3);
-  font-size: 17px;
-}
-
-.support-copy {
+.support-grid {
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
 }
 
-.support-note {
-  max-width: 760px;
-  color: var(--ink-3);
-  font-size: 16px;
+.support-card {
+  display: grid;
+  gap: 8px;
+}
+
+.support-label {
+  color: var(--ink-4);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.support-card p {
+  color: var(--ink-2);
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 footer {
