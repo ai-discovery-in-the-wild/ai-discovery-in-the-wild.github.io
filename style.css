@@ -225,19 +225,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  min-height: 180px;
-  margin-top: 10px;
-  padding: 22px;
-  color: rgba(23, 20, 16, 0.9);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--border-soft);
-  border-radius: 24px;
+  width: 225px;
+  min-height: 225px;
+  margin-top: 2px;
+  color: rgba(23, 20, 16, 0.92);
 }
 
 .hero-mark-icon {
   width: 100%;
   height: auto;
+  mix-blend-mode: darken;
 }
 
 .button {
@@ -872,8 +869,8 @@ footer {
   }
 
   .hero-mark {
-    width: 144px;
-    min-height: 144px;
+    width: 180px;
+    min-height: 180px;
     margin-top: 0;
   }
 }
