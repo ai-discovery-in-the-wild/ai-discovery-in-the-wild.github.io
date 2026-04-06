@@ -196,10 +196,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 22px;
+  margin-top: 24px;
   color: var(--ink-2);
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 650;
 }
 
 .meta-sep {
@@ -257,15 +257,18 @@ img {
 }
 
 .dates-wrap {
-  padding: 16px 0 0;
+  padding: 18px 0 8px;
 }
 
 .dates-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  margin-top: 10px;
-  border-top: 1px solid var(--border);
+  margin-top: 12px;
+  background: var(--panel-strong);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .dates-heading {
@@ -277,16 +280,16 @@ img {
 }
 
 .date-item {
-  padding: 20px 24px;
-  border-left: 1px solid var(--border);
+  padding: 22px 24px 20px;
+  border-left: 1px solid var(--border-soft);
 }
 
 .date-item:first-child { border-left: 0; }
 
 .date-label {
   display: block;
-  color: var(--ink-4);
-  font-size: 12px;
+  color: var(--ink-3);
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -294,10 +297,11 @@ img {
 
 .date-value {
   display: block;
-  margin-top: 6px;
+  margin-top: 7px;
   color: var(--ink);
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.15;
+  font-weight: 800;
 }
 
 main section {
