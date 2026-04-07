@@ -256,23 +256,23 @@ img {
 }
 
 .button-primary {
-  background: var(--ink);
+  background: #8b2020;
   color: #fff;
 }
 
 .button-primary:hover {
-  background: #2a251f;
+  background: #742020;
 }
 
 .button-secondary {
-  background: transparent;
-  color: var(--ink);
-  border: 1px solid var(--border-strong);
+  background: #f3e8e8;
+  color: #8b2020;
+  border: 1px solid rgba(139, 32, 32, 0.15);
 }
 
 .button-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent-deep);
+  background: #ebdada;
+  color: #742020;
 }
 
 #dates-strip {
@@ -492,7 +492,7 @@ h2 {
   min-width: 300px;
   padding: 0 24px;
   border-radius: 16px;
-  background: var(--ink);
+  background: #8b2020;
   color: #fff;
   font-size: 15px;
   font-weight: 800;
